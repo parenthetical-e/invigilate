@@ -13,7 +13,8 @@ Another option is offered by this library. It lets you choose what variables to 
 ```python 
 from invigilate import Log
 
-def run(num, monitor=None, save='data.csv'):
+def nonsense(num, monitor=None, save='data.csv'):
+    """Do some silly calculations."""
     logger = Log(monitor, update_every = 1)
     for i in range(num):
         x = i * 10
@@ -27,11 +28,11 @@ def run(num, monitor=None, save='data.csv'):
 A couple runtime examples.
 
 ```python
-    >>> run(10, monitor=('i', 'z'))
+    >>> nonsense(10, monitor=('i', 'z'))
     # writes the saved data to 'data.csv'
 ```
 
 ```python
-    >>> run(10, monitor=('x', 'y', 'z'))
+    >>> nonsense(10, monitor=('x', 'y', 'z'))
     # writes the saved data to 'data.csv'
 ```
