@@ -11,17 +11,17 @@ One solution is to log everything. This gets expensive.
 Another option is offered by this library. It lets you choose what variables to log at runtime.
 
 ```python 
-from invigilate import Log
+from invigilate import Store
 
 def nonsense(num, monitor=None, save='data.csv'):
     """Do some silly calculations."""
-    logger = Log(monitor, update_every = 1)
+    store = Store(monitor, update_every = 1)
     for i in range(num):
         x = i * 10
         y = x**2
         z = x / y
-        logger.update(i, locals())
-    logger.save(save)
+        store.update(i, locals())
+    store.save(save)
     return z
 ```
 
