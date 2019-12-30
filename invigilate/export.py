@@ -28,6 +28,16 @@ def load_csv(name, store):
     pass
 
 
+def save_npy(name, store):
+    """Export to .npy"""
+    pass
+
+
+def load_npy(name):
+    """Load an .npy based store"""
+    pass
+
+
 def save_hdf5(name, store):
     """Export to HDF5"""
     pass
