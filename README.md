@@ -10,7 +10,7 @@ One solution is to log everything. This gets expensive.
 
 Another option is offered by this library. It lets you choose what variables to log at runtime.
 
-```
+```python 
 from invigilate import Log
 
 def run(num, monitor=None, save='data.csv'):
@@ -26,12 +26,12 @@ def run(num, monitor=None, save='data.csv'):
 
 A couple runtime examples.
 
-```
+```python
     >>> run(10, monitor=('i', 'z'))
     # writes the saved data to 'data.csv'
 ```
 
-```
+```python
     >>> run(10, monitor=('x', 'y', 'z'))
     # writes the saved data to 'data.csv'
 ```
