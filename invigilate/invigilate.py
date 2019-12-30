@@ -31,5 +31,5 @@ def save_store(name, store):
 
 
 def load_store(name, store):
-    """Save the data in the store, as csv"""
+    """Load saved data into a store"""
     pass
