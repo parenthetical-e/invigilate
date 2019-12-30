@@ -24,8 +24,8 @@ class StoreBest():
         self.best_score = intial_score
         self.replace = replace
         self.monitor = self.monitor
-        self.data = {}
 
+        self.data = {}
         if not self.replace:
             for k in self.monitor:
                 self.data[k] = list()
