@@ -1,0 +1,10 @@
+*.json
+*.local
+*.png
+*.pyc
+*.DS_Store
+*checkpoint.ipynb
+.vscode/*
+data/*
+test/*
+*egg*
