@@ -4,7 +4,7 @@ A simple way to log any variables at runtime.
 
 # Usage
 
-Let's define a function to do some calculations. Sometimes we want to save local variables in this function, but don't know what variables are going to be important when. 
+Let's define a nonsense function. It will to do some simple calculations. Imagine we want to log then save local variables from this function, but don't know which ones will be important when.
 
 One solution is to log everything. This gets expensive. 
 
