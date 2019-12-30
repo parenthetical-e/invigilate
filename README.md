@@ -12,7 +12,7 @@ Another option is offered by this library. It lets you choose what variables to 
 
 ```python 
 from invigilate import Store
-from invigilate.export import save_csv
+from invigilate import save_csv
 
 def nonsense(num, monitor=None, name='data.csv'):
     """Do some silly calculations."""
