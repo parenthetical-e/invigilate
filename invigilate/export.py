@@ -41,6 +41,16 @@ def load_json(name):
     pass
 
 
+def save_pkl(name, store):
+    """Export to cloudpickle"""
+    pass
+
+
+def load_pkl(name):
+    """Load a cloudpickle based store"""
+    pass
+
+
 def save_delimited(name, store, sep="\t", fmt=None):
     """Export to any kind of delimited table -- csv,tsv,unix
 
