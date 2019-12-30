@@ -14,7 +14,7 @@ class Store():
         """Update the store"""
         if self.monitor:
             if (int(step) % self.update_every) == 0:
-                for k in self.data:
+                for k in self.monitor:
                     self.data[k].append(locals_dict[k])
 
 
@@ -35,7 +35,7 @@ class StoreBest():
         if self.monitor:
             if score > self.best_score:
                 self.best_score = score
-                for k in self.data:
+                for k in self.monitor:
                     if not self.replace:
                         self.data[k].append(locals_dict[k])
                     else:
