@@ -12,8 +12,9 @@ Another option is offered by this library. It lets you choose what variables to 
 
 ```python 
 from invigilate import Store
+from invigilate import save_store
 
-def nonsense(num, monitor=None, save='data.csv'):
+def nonsense(num, monitor=None, name='data.csv'):
     """Do some silly calculations."""
     store = Store(monitor, update_every = 1)
     for i in range(num):
@@ -21,7 +22,7 @@ def nonsense(num, monitor=None, save='data.csv'):
         y = x**2
         z = x / y
         store.update(i, locals())
-    store.save(save)
+    save_store(name, store)
     return z
 ```
 
