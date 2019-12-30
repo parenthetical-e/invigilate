@@ -1,6 +1,3 @@
-import csv
-
-
 class Store():
     """Monitor some variables."""
     def __init__(self, monitor=None, update_every=1):
