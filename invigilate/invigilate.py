@@ -31,5 +31,6 @@ class StoreBest():
         """Update the store, if the score has gotten better."""
         if self.monitor:
             if score > self.best_score:
+                self.best_score = score
                 for k in self.data:
                     self.data[k].append(locals_dict[k])
