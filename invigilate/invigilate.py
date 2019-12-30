@@ -16,20 +16,3 @@ class Store():
             if (int(step) % self.update_every) == 0:
                 for k in self.data:
                     self.data[k].append(locals_dict[k])
-
-
-def save_store(name, store):
-    """Save the data in the store, as csv"""
-    if store.monitor:
-        with open(name, 'w') as csv_file:
-            keys = sorted(store.data.keys())
-            values = [store.data[k] for k in keys]
-            w = csv.writer(csv_file)
-            w.writerow(keys)
-            for row in zip(*values):
-                w.writerow(row)
-
-
-def load_store(name, store):
-    """Load saved data into a store"""
-    pass
